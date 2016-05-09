@@ -7,12 +7,7 @@ module.exports = function(pipelines) {
     pipelines["build"] = [
         glob({basePath: "src"}, "**/*.ts"),
         ts(),
-        write("lib")
+        write("lib"),
+        ava({files: "test/*.js", source: "src/**/*.ts"})
     ];
-
-    // TODO: Fix.
-    // pipelines["ava"] = [
-    //     glob("tests/*.js"),
-    //     ava([], {batch: true})
-    // ];
 };

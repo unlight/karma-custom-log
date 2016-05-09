@@ -30,6 +30,13 @@ Expected false to be true.
 ```js
 import {karmaResult} from "karma-custom-log";
 __karma__.result = karmaResult(__karma__.result, __karma__, options);
+
+```
+
+### EXAMPLE
+```js
+import {karmaResult} from "karma-custom-log";
+__karma__.result = karmaResult(__karma__.result, __karma__, {projectRoot: "http://localhost:9876/base"});
 ```
 
 ### OPTIONS
