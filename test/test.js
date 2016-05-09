@@ -30,3 +30,9 @@ test("main", t => {
     t.true(result.indexOf("app.spec.ts") !== -1);
     t.true(result.indexOf("Expected false to be true") !== -1);
 });
+
+test("karmaResult empty log object", t => {
+    var newFunc = karmaResult(function(result) {
+    }, null, {});
+    newFunc({log: []});
+});

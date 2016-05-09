@@ -11,9 +11,11 @@ export function customLog(stack: string, options: {[key: string]: any}): string 
 }
 
 export function karmaResult(oldFunction: Function, karma: any, options: any) : Function {
-    return function() {
-        var log: string = arguments[0].log[0];
-        arguments[0].log[0] = customLog(log, options);
+    return function(result) {
+        var log: string = result.log[0];
+        if (typeof log === "string") {
+            arguments[0].log[0] = customLog(log, options);
+        }
         return oldFunction.apply(karma, arguments);
     }
 }
