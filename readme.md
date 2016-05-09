@@ -1,6 +1,7 @@
 karma-custom-log
 ----------------
 Remove external files from stack trace while running karma.
+
 Before:
 ```
 Expected false to be true.

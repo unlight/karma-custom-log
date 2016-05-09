@@ -1,10 +1,9 @@
 {
   "name": "karma-custom-log",
   "version": "1.0.0",
-  "description": "",
+  "description": "Remove external files from stack trace while running karma",
   "main": "lib/index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "keywords": [
     "karma"
   ],
@@ -16,6 +15,17 @@
     "sigh-babel": "^0.11.7",
     "sigh-ts": "0.0.1"
   },
-  "dependencies": {
-  }
+  "dependencies": {},
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unlight/karma-custom-log.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/unlight/karma-custom-log/issues"
+  },
+  "homepage": "https://github.com/unlight/karma-custom-log#readme"
 }
