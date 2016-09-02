@@ -40,4 +40,9 @@ __karma__.result = karmaResult(__karma__.result, __karma__, {projectRoot: "http:
 ```
 
 ### OPTIONS
-* projectRoot - absolute path to root of project (e.g. /project)
+* `projectRoot` - absolute path to root of project (e.g. /project)
+* `exclude` - regexp to exclude line from stacktrace 
+
+### CHANGELOG
+- 1.2.1 (2 Sep 2016): added option `exclude`
+- 1.2.0 (2 Sep 2016): changelog started 

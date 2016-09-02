@@ -1,10 +1,11 @@
 export function customLog(stack: string, options: {[key: string]: any}): string {
-    var {projectRoot} = options;
+    var {projectRoot, exclude} = options;
     var projectNodeModules = `${projectRoot}/node_modules`;
     return stack.split("\n")
         .filter((x, index) => {
             if (index === 0) return true;
             if (x.indexOf(projectNodeModules) !== -1) return false;
+            if (exclude && exclude.test && exclude.test(x)) return false;
             return true;
         })
         .join("\n");

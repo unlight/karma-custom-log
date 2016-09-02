@@ -9,15 +9,21 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "ava": "^0.14.0",
+    "ava": "0.16.0",
     "sigh": "^0.12.29",
-    "sigh-ava": "0.0.1",
-    "sigh-babel": "^0.11.7",
-    "sigh-ts": "0.0.1"
+    "sigh-ava": "0.3.1",
+    "sigh-babel": "0.12.1",
+    "sigh-ts": "0.0.10"
   },
   "dependencies": {},
   "directories": {
     "test": "test"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
   },
   "repository": {
     "type": "git",
