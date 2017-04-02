@@ -1,5 +1,7 @@
 karma-custom-log
 ----------------
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/unlight/karma-custom-log.svg)](https://greenkeeper.io/)
 Remove external files from stack trace while running karma.
 
 Before:
